@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Hiring Rejection Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>AI Hiring Rejection Analyzer</h1>
+    <p>Resume Screening • Bias Detection • LLM Explanations</p>
+  </header>
+
+  <!-- Resume Upload -->
+  <section class="upload">
+    <h2>Upload Resume (PDF)</h2>
+    <input type="file" id="resumeFile" accept=".pdf">
+    <button onclick="uploadResume()">Analyze Resume</button>
+    <p id="uploadStatus"></p>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="card">
+      <h2 id="totalResumes">0</h2>
+      <p>Total Resumes Analyzed</p>
+    </div>
+  </section>
+
+  <!-- Charts -->
+  <section class="charts">
+    <div class="card">
+      <h3>Top Rejection Reasons</h3>
+      <canvas id="rejectionChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Bias Trends</h3>
+      <canvas id="biasChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Top Detected Skills</h3>
+      <canvas id="skillsChart"></canvas>
+    </div>
+  </section>
+
+  <!-- LLM Explanations -->
+  <section class="explanations">
+    <h2>LLM Hiring Explanations</h2>
+    <div id="explanationList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
