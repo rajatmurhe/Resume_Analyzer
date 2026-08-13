@@ -1,0 +1,25 @@
+# Environment variables / API keys
+.env
+.env.*
+backend/.env
+backend/.env.*
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
